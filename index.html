@@ -6,11 +6,11 @@
   <title>Popular Cities</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
-
-  <div class="mx-auto max-w-[900px]">
-    <header class="bg-gray-800 text-white py-4">
-      <div class="flex justify-between items-center">
+<body class="bg-gray-100 font-sans h-screen flex items-center justify-center">
+  <!-- Весь контент страницы -->
+  <div class="bg-white mx-auto max-w-[900px] shadow-lg rounded-lg">
+    <header class="bg-gray-800 text-white py-4 rounded-t-lg">
+      <div class="flex justify-between items-center px-4">
         <h1 class="text-xl font-bold">Cities in the World</h1>
         <nav>
           <ul class="flex space-x-4">
@@ -22,15 +22,15 @@
       </div>
     </header>
 
-    <main class="py-8">
-      
+    <main class="py-8 px-4">
+      <!-- Изображение -->
       <section class="text-center mb-8">
         <img src="./imgs/city_collage.jpg" alt="Collage of Cities" class="mx-auto w-full max-w-[800px] rounded-lg shadow-md">
       </section>
 
-    
+      <!-- Содержимое -->
       <section class="flex space-x-4 mb-8">
-        <div class="w-1/4 bg-white shadow p-4">
+        <div class="w-1/4 bg-white shadow p-4 rounded-lg">
           <h3 class="font-bold text-lg mb-2">Ranking - Most Visited</h3>
           <ul class="space-y-2">
             <li>1. Bangkok, Thailand</li>
@@ -42,34 +42,34 @@
           </ul>
         </div>
         <div class="grid grid-cols-3 gap-4 w-3/4">
-          <div class="bg-white shadow p-4">
+          <div class="bg-white shadow p-4 rounded-lg">
             <h3 class="font-bold text-lg">Bangkok, Thailand</h3>
             <p class="text-gray-600">Visitors: 32,400,000 (37%)</p>
           </div>
-          <div class="bg-white shadow p-4">
+          <div class="bg-white shadow p-4 rounded-lg">
             <h3 class="font-bold text-lg">Istanbul, Turkey</h3>
             <p class="text-gray-600">Visitors: 23,000,000 (14%)</p>
           </div>
-          <div class="bg-white shadow p-4">
+          <div class="bg-white shadow p-4 rounded-lg">
             <h3 class="font-bold text-lg">London, United Kingdom</h3>
             <p class="text-gray-600">Visitors: 21,700,000 (7%)</p>
           </div>
-          <div class="bg-white shadow p-4">
+          <div class="bg-white shadow p-4 rounded-lg">
             <h3 class="font-bold text-lg">Hong Kong, Hong Kong</h3>
             <p class="text-gray-600">Visitors: 20,500,000 (19%)</p>
           </div>
-          <div class="bg-white shadow p-4">
+          <div class="bg-white shadow p-4 rounded-lg">
             <h3 class="font-bold text-lg">Mecca, Saudi Arabia</h3>
             <p class="text-gray-600">Visitors: 19,300,000 (20%)</p>
           </div>
-          <div class="bg-white shadow p-4">
+          <div class="bg-white shadow p-4 rounded-lg">
             <h3 class="font-bold text-lg">Antalya, Turkey</h3>
             <p class="text-gray-600">Visitors: 19,300,000 (17%)</p>
           </div>
         </div>
       </section>
 
-      <section class="bg-gray-200 py-8">
+      <section class="bg-gray-200 py-8 rounded-lg">
         <h3 class="text-center text-2xl font-bold mb-4">Most Popular Restaurant</h3>
         <div class="flex justify-center space-x-4">
           <div class="text-center">
@@ -92,7 +92,7 @@
       </section>
     </main>
 
-    <footer class="bg-gray-800 text-white text-center py-4">
+    <footer class="bg-gray-800 text-white text-center py-4 rounded-b-lg">
       <p>© 2025 Company, Inc</p>
     </footer>
   </div>
