@@ -6,7 +6,7 @@
   <title>Popular Cities</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans h-screen flex items-center justify-center">
+<body class="bg-gray-100 font-sans min-h-screen flex items-center justify-center">
   
   <div class="bg-white mx-auto max-w-[900px] shadow-lg rounded-lg mt-4">
     <header class="bg-gray-700 text-white py-4">
@@ -34,63 +34,93 @@
           <h3 class="font-bold text-lg mb-2">Ranking - The Most Visited Cities 2024</h3>
           <div class="space-y-4">
             <div class="relative">
-              <img src="./imgs/bangkok_ranking.JPG" alt="Bangkok" class="w-full h-auto rounded shadow">
+              <img src="./imgs/bangkok_ranking.JPG" alt="Bangkok" class="w-full h-auto shadow">
               <p class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">Bangkok</p>
             </div>
             <div class="relative">
-              <img src="./imgs/istanbul_ranking.JPG" alt="Istanbul" class="w-full h-auto rounded shadow">
+              <img src="./imgs/istanbul_ranking.JPG" alt="Istanbul" class="w-full h-auto shadow">
               <p class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">Istanbul</p>
             </div>
             <div class="relative">
-              <img src="./imgs/london_ranking.JPG" alt="London" class="w-full h-auto rounded shadow">
+              <img src="./imgs/london_ranking.JPG" alt="London" class="w-full h-auto shadow">
               <p class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">London</p>
             </div>
             <div class="relative">
-              <img src="./imgs/hong_kong_ranking.JPG" alt="Hong Kong" class="w-full h-auto rounded shadow">
+              <img src="./imgs/hong_kong_ranking.JPG" alt="Hong Kong" class="w-full h-auto shadow">
               <p class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">Hong Kong</p>
             </div>
             <div class="relative">
-              <img src="./imgs/mecca_ranking.JPG" alt="Mecca" class="w-full h-auto rounded shadow">
+              <img src="./imgs/mecca_ranking.JPG" alt="Mecca" class="w-full h-auto shadow">
               <p class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">Mecca</p>
             </div>
             <div class="relative">
-              <img src="./imgs/antalya_ranking.JPG" alt="Antalya" class="w-full h-auto rounded shadow">
+              <img src="./imgs/antalya_ranking.JPG" alt="Antalya" class="w-full h-auto shadow">
               <p class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">Antalya</p>
             </div>
           </div>
         </div>
 
-        <!-- Грид с изображениями -->
+        <!-- Грид без отступа сверху -->
         <div class="grid grid-cols-3 gap-4 w-3/4">
-          <div class="bg-white shadow p-4 rounded-lg">
-            <img src="./imgs/bangkok_body.JPG" alt="Bangkok Image" class="w-full h-auto rounded mb-2">
-            <h3 class="font-bold text-lg">Bangkok, Thailand</h3>
-            <p class="text-gray-600">Visitors: 32,400,000</p>
+          <div class="bg-white shadow relative">
+            <img src="./imgs/bangkok_body.JPG" alt="Bangkok Image" class="w-full h-[120px] object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Bangkok, Thailand</h3>
+              <p class="text-gray-600">Visitors: 32,400,000</p>
+            </div>
+            <button class="absolute bottom-4 right-4 bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+              Visit me
+            </button>
           </div>
-          <div class="bg-white shadow p-4 rounded-lg">
-            <img src="./imgs/istanbul_body.JPG" alt="Istanbul Image" class="w-full h-auto rounded mb-2">
-            <h3 class="font-bold text-lg">Istanbul, Turkey</h3>
-            <p class="text-gray-600">Visitors: 23,000,000</p>
+          <div class="bg-white shadow relative">
+            <img src="./imgs/istanbul_body.JPG" alt="Istanbul Image" class="w-full h-[120px] object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Istanbul, Turkey</h3>
+              <p class="text-gray-600">Visitors: 23,000,000</p>
+            </div>
+            <button class="absolute bottom-4 right-4 bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+              Visit me
+            </button>
           </div>
-          <div class="bg-white shadow p-4 rounded-lg">
-            <img src="./imgs/london_body.JPG" alt="London Image" class="w-full h-auto rounded mb-2">
-            <h3 class="font-bold text-lg">London, United Kingdom</h3>
-            <p class="text-gray-600">Visitors: 21,700,000</p>
+          <div class="bg-white shadow relative">
+            <img src="./imgs/london_body.JPG" alt="London Image" class="w-full h-[120px] object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-bold text-lg">London, United Kingdom</h3>
+              <p class="text-gray-600">Visitors: 21,700,000</p>
+            </div>
+            <button class="absolute bottom-4 right-4 bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+              Visit me
+            </button>
           </div>
-          <div class="bg-white shadow p-4 rounded-lg">
-            <img src="./imgs/hong_kong_body.JPG" alt="Hong Kong Image" class="w-full h-auto rounded mb-2">
-            <h3 class="font-bold text-lg">Hong Kong, Hong Kong</h3>
-            <p class="text-gray-600">Visitors: 20,500,000</p>
+          <div class="bg-white shadow relative">
+            <img src="./imgs/hong_kong_body.JPG" alt="Hong Kong Image" class="w-full h-[120px] object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Hong Kong, Hong Kong</h3>
+              <p class="text-gray-600">Visitors: 20,500,000</p>
+            </div>
+            <button class="absolute bottom-4 right-4 bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+              Visit me
+            </button>
           </div>
-          <div class="bg-white shadow p-4 rounded-lg">
-            <img src="./imgs/mecca_body.JPG" alt="Mecca Image" class="w-full h-auto rounded mb-2">
-            <h3 class="font-bold text-lg">Mecca, Saudi Arabia</h3>
-            <p class="text-gray-600">Visitors: 19,300,000</p>
+          <div class="bg-white shadow relative">
+            <img src="./imgs/mecca_body.JPG" alt="Mecca Image" class="w-full h-[120px] object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Mecca, Saudi Arabia</h3>
+              <p class="text-gray-600">Visitors: 19,300,000</p>
+            </div>
+            <button class="absolute bottom-4 right-4 bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+              Visit me
+            </button>
           </div>
-          <div class="bg-white shadow p-4 rounded-lg">
-            <img src="./imgs/antalya_body.JPG" alt="Antalya Image" class="w-full h-auto rounded mb-2">
-            <h3 class="font-bold text-lg">Antalya, Turkey</h3>
-            <p class="text-gray-600">Visitors: 19,300,000</p>
+          <div class="bg-white shadow relative">
+            <img src="./imgs/antalya_body.JPG" alt="Antalya Image" class="w-full h-[120px] object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Antalya, Turkey</h3>
+              <p class="text-gray-600">Visitors: 19,300,000</p>
+            </div>
+            <button class="absolute bottom-4 right-4 bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+              Visit me
+            </button>
           </div>
         </div>
       </section>
